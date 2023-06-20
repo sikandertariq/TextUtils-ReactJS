@@ -3,18 +3,12 @@ import Navbar from "./Navbar";
 import TextForm from "./TextForm";
 
 function App() {
-  return(
+  return (
     <>
-      <Navbar
-        Name='TextUtils'
-      />
-      <TextForm Name='Enter Text'>
-        
-      </TextForm>
-      
-
+      <Navbar Name="TextUtils" />
+      <TextForm></TextForm>
     </>
-  )
+  );
 }
 
 export default App;

@@ -15,7 +15,7 @@ export default function TextForm(props) {
           for="exampleFormControlTextarea1"
           className="form-label"
         >
-          {props.Name}
+          {/* <h1>{props.Name}</h1> */}
         </label>
         <textarea
           className="form-control"
@@ -31,12 +31,19 @@ export default function TextForm(props) {
             type="button"
             onClick={HandlerofText}
           >
-            Submit
+            UpperCase
           </button>
         </div>
       </div>
-      <div  className="container my-3">
-        <h4>{text.split(" ").length} words and {text.length} characters</h4>
+      <div className="container my-3">
+        {text.trim().length > 0 ? (
+          <h4>
+            {text.trim().split(/\s+/).filter(Boolean).length} words and{" "}
+            {text.length} characters
+          </h4>
+        ) : (
+          <h4>Please enter some text.</h4>
+        )}
       </div>
     </>
   );
