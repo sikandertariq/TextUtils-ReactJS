@@ -1,12 +1,16 @@
-import React from "react";
+import React from "react"
 
-export default function Navbar(props) {
+export default function Navbar({ Name, darkMode }) {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav
+        className={`navbar navbar-expand-lg  ${
+          darkMode === true ? "navbar-dark bg-dark" : "bg-body-tertiary"
+        }`}
+      >
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            {props.Name}
+            {Name}
           </a>
           <button
             className="navbar-toggler"
@@ -81,5 +85,5 @@ export default function Navbar(props) {
         </div>
       </nav>
     </div>
-  );
+  )
 }

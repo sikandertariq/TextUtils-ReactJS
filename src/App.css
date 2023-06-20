@@ -1,0 +1,33 @@
+.screen{
+    min-height: 100vh;
+}
+.form-container{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+
+.dark-mode{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    animation: shake 1.65s alternate ease-out;
+}
+.white-mode{
+    background: #dcdcdc;
+}
+
+.form-container > textarea{
+    background: rgba(255, 255, 255, 0.958);
+}
+/* .dark-mode{
+    animation: shake 1.65s alternate ease-out;
+} */
+/* @keyframes shake { 
+    0%   {transform: translateX(0%);}
+    20%  {transform: translateX(-10px);}
+    40%  {transform: translateX(0%);}
+    60%  {transform: translateX(10px);}
+    80% {transform:  translateX(0%);}
+    100% {transform: scale(0.9) }
+
+} */
