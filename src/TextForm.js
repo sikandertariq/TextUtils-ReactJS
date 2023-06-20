@@ -40,7 +40,7 @@ export default function TextForm({ mids, shawty, darkMode, setDarkMode }) {
       animate = "show"
       className={`screen ${darkMode === true? 'dark-mode': 'white-mode'}`} >
 
-        <motion.div variants={container} className="mx-3 my-2">
+        <motion.div variants={container} className="px-3 py-2">
           {text.trim().length > 0 ? (
             <h4>
               {text.trim().split(/\s+/).filter(Boolean).length} words and{" "}

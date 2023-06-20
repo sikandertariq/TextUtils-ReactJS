@@ -10,8 +10,8 @@
 .dark-mode{
     background-color: rgb(49, 49, 49);
     color: white;
-    animation: shake 1.65s alternate ease-out;
 }
+
 .white-mode{
     background: #dcdcdc;
 }
