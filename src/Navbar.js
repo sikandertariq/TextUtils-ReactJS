@@ -1,13 +1,13 @@
 import React from "react";
 
 export default function Navbar(props) {
-  const navbarStyle = {
-    backgroundColor: props.mode === "dark" ? "#343a40" : "#f8f9fa",
-    // Add any other style properties as needed
-  };
+  // const navbarStyle = {
+  //   backgroundColor: props.mode === "dark" ? "#343a40" : "#f8f9fa",
+  //   // Add any other style properties as needed
+  // };
   return (
     <div>
-      <nav className="navbar navbar-expand-lg" style={navbarStyle}>
+      <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`} >
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             {props.Name}
