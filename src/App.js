@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <Navbar Name="TextUtils" mode={mode} />
+      <Navbar Name="TextUtils" mode={mode}  toggleSwitch={toggleSwitch} />
       <TextForm></TextForm>
       
       {/* <About></About> */}
