@@ -6,15 +6,18 @@ import TextForm from "./TextForm";
 import Alert from "./Alert";
 
 function App() {
-  const [mode, setmode] = useState("dark")
-  
+  const [mode, setmode] = useState("light");
+  const toggleSwitch = () => {
+    if (mode === "light") {
+      setmode("dark");
+    } else {
+      setmode("light");
+    }
+  };
+
   return (
     <>
       <Navbar Name="TextUtils" mode={mode} />
-      <Alert
-      text="Click to dismiss ">
-        
-      </Alert>
       <TextForm></TextForm>
       
       {/* <About></About> */}
